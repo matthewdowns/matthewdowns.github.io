@@ -8,6 +8,7 @@ import {
 } from '@heroicons/react/24/outline'
 import classNames from 'classnames'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useContext } from 'react'
 import PageContext from '@/context/Page'
 import Page, { PageMap } from '@/types/Page'
@@ -52,7 +53,7 @@ function TopNavigation() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {Object.keys(tabs).map(tab => (
-                      <a
+                      <Link
                         key={tab}
                         href={tabs[tab as Page]}
                         className={classNames(
@@ -62,7 +63,7 @@ function TopNavigation() {
                         aria-current={tab === page.current ? 'page' : undefined}
                       >
                         {PageMap[tab as Page]}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
