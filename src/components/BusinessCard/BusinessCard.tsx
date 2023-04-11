@@ -85,7 +85,7 @@ function BusinessCard(props: BusinessCardProps) {
                 <EnvelopeIcon width="0.875rem" height="0.875rem" />
                 <Link
                   className={`text-xs${showEmail === false ? ' opacity-50' : ' text-blue-500 hover:text-blue-400'}`}
-                  href={showEmail ? `mailto:${email}` : '#'}
+                  href={showEmail ? `mailto:${email.address}@${email.domain}` : '#'}
                   rel="noopener"
                   target="_blank"
                   onClick={e => {
@@ -96,7 +96,7 @@ function BusinessCard(props: BusinessCardProps) {
                     }
                   }}
                 >
-                  {showEmail ? email : 'Click to show'}
+                  {showEmail ? `${email.address}@${email.domain}` : 'Click to show'}
                 </Link>
               </div>
             )}

@@ -11,7 +11,13 @@ export interface BusinessCardProps {
   picture?: ImageProps
   name: string
   title: string
-  email?: string
+  /**
+   * Prevent spam bot crawlers from detecting email address in JavaScript by splitting it up
+   */
+  email?: {
+    address: string
+    domain: string
+  }
   phone?: string
   defaultShowEmail?: boolean
   defaultShowPhone?: boolean
