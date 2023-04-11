@@ -57,8 +57,8 @@ function Home() {
           }}
           name="Matthew Downs"
           title="Software Engineer"
-          email="contact@matthewdowns.com"
-          defaultShowEmail={true}
+          email="matthew.downsc@gmail.com"
+          defaultShowEmail={false}
         />
       </animated.div>
     </div>
