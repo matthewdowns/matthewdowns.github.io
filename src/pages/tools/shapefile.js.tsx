@@ -41,14 +41,20 @@ function ShapefileJS() {
         Easily read and parse Shapefiles from the browser. Shapefile.js allows you to load a .zip as a
         buffer, and parse each file individually.
       </p>
-      <p className="!mt-0">
+      <div className="flex flex-wrap gap-4">
         <Link
-          href="https://github.com/matthewdowns/portfolio/tree/main/src/pages/tools/shapefile.js.jsx"
+          href="https://github.com/matthewdowns/shapefile.js"
           target="_blank"
         >
-          <small>View this code on GitHub</small>
+          <small>View project code</small>
         </Link>
-      </p>
+        <Link
+          href="https://github.com/matthewdowns/matthewdowns.github.io/tree/main/src/pages/tools/shapefile.js.tsx"
+          target="_blank"
+        >
+          <small>View this page&apos;s code</small>
+        </Link>
+      </div>
       <div className="not-prose">
         <div className="bg-orange-100 border-l-4 border-orange-500 rounded-r text-orange-700 px-3 py-2" role="alert">
           <p className="text-md font-bold">Warning</p>
