@@ -10,9 +10,13 @@ function Document() {
   return (
     <Html lang="en">
       <Head>
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=" />
         <Script
-          id="google-analytics"
+          id="gtag"
+          src="https://www.googletagmanager.com/gtag/js?id="
+          strategy="afterInteractive"
+        />
+        <Script
+          id="gtag-config"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
