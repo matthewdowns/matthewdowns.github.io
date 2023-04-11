@@ -1,0 +1,6 @@
+{
+    "yaml.schemas": {
+        "openapi.yaml": "https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/schemas/v3.0/schema.json",
+        "https://json.schemastore.org/github-workflow.json": "file:///Users/matthewdowns/Workspace/%40matthewdowns/portfolio/.github/workflows/deploy.yml"
+    }
+}
