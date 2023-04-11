@@ -11,24 +11,21 @@ function Document() {
     <Html lang="en">
       <Head>
         <Script
-          async
-          id="gtag-js"
+          id="gtag"
           src="https://www.googletagmanager.com/gtag/js?id="
-          strategy="beforeInteractive"
         />
         <Script
-          id="gtag-init"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-
-              gtag('config', 'G-ZYT3MBHTVG');
-            `
-          }}
+          id="gtag-config"
           strategy="afterInteractive"
-        />
+        >
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-ZYT3MBHTVG');
+          `}
+        </Script>
 
         <meta httpEquiv="Pragma" content="no-cache" />
         <meta httpEquiv="Cache-Control" content="no-cache" />
