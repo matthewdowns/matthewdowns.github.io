@@ -83,9 +83,9 @@ function BusinessCard(props: BusinessCardProps) {
             {email != null && (
               <div className="flex items-center gap-2">
                 <EnvelopeIcon width="0.875rem" height="0.875rem" />
-                <a
+                <Link
                   className={`text-xs${showEmail === false ? ' opacity-50' : ' text-blue-500 hover:text-blue-400'}`}
-                  href={showEmail ? `mailto:${email}` : undefined}
+                  href={showEmail ? `mailto:${email}` : '#'}
                   rel="noopener"
                   target="_blank"
                   onClick={e => {
@@ -97,15 +97,15 @@ function BusinessCard(props: BusinessCardProps) {
                   }}
                 >
                   {showEmail ? email : 'Click to show'}
-                </a>
+                </Link>
               </div>
             )}
             {phone != null && (
               <div className="flex items-center gap-2">
                 <PhoneIcon width="0.875rem" height="0.875rem" />
-                <a
+                <Link
                   className={`text-xs${showPhone === false ? ' opacity-50' : ' text-blue-500 hover:text-blue-400'}`}
-                  href={showPhone ? `tel:${phone}` : undefined}
+                  href={showPhone ? `tel:${phone}` : '#'}
                   onClick={e => {
                     e.stopPropagation()
                     if (showPhone === false) {
@@ -115,7 +115,7 @@ function BusinessCard(props: BusinessCardProps) {
                   }}
                 >
                   {showPhone ? formatPhoneNumber(phone) : 'Click to show'}
-                </a>
+                </Link>
               </div>
             )}
             <div className="flex items-center gap-2">
