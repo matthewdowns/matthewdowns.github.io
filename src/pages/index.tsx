@@ -57,7 +57,10 @@ function Home() {
           }}
           name="Matthew Downs"
           title="Software Engineer"
-          email="matthew.downsc@gmail.com"
+          email={{
+            address: 'matthew.downsc',
+            domain: 'gmail.com'
+          }}
           defaultShowEmail={false}
         />
       </animated.div>

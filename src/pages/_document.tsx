@@ -13,27 +13,25 @@ function Document() {
         <Script
           id="gtag"
           src="https://www.googletagmanager.com/gtag/js?id="
-          strategy="afterInteractive"
         />
         <Script
           id="gtag-config"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-
-              gtag('config', 'G-ZYT3MBHTVG');
-            `
-          }}
           strategy="afterInteractive"
-        />
+        >
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-ZYT3MBHTVG');
+          `}
+        </Script>
 
         <meta httpEquiv="Pragma" content="no-cache" />
         <meta httpEquiv="Cache-Control" content="no-cache" />
 
-        <meta name="keywords" content="matthewdowns,portfolio" />
-        <meta name="description" content="Matthew Downs Portfolio" />
+        <meta name="keywords" content="matthewdowns,matthew downs,portfolio,software engineer" />
+        <meta name="description" content="Welcome to the portfolio of Matthew Downs, a skilled software engineer with experience in Node.js, TypeScript, React, and much more. Explore Matthew's projects and learn more about their technical skills, problem-solving abilities, and commitment to delivering high-quality software solutions." />
 
         <meta httpEquiv="x-dns-prefetch-control" content="off" />
 
@@ -41,12 +39,12 @@ function Document() {
         <meta name="og:url" content="https://matthewdowns.com" />
         <meta name="og:type" content="website" />
         <meta name="og:title" content="Matthew Downs" />
-        <meta name="og:description" content="" />
+        <meta name="og:description" content="Welcome to the portfolio of Matthew Downs, a skilled software engineer with experience in Node.js, TypeScript, React, and much more. Explore Matthew's projects and learn more about their technical skills, problem-solving abilities, and commitment to delivering high-quality software solutions." />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@matthewdowns" />
         <meta name="twitter:url" content="https://matthewdowns.com" />
         <meta name="twitter:title" content="Matthew Downs" />
-        <meta name="twitter:description" content="" />
+        <meta name="twitter:description" content="Welcome to the portfolio of Matthew Downs, a skilled software engineer with experience in Node.js, TypeScript, React, and much more. Explore Matthew's projects and learn more about their technical skills, problem-solving abilities, and commitment to delivering high-quality software solutions." />
 
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
         <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />

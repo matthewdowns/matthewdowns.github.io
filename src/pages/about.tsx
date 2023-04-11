@@ -1,8 +1,13 @@
+import Head from 'next/head'
 import Image from 'next/image'
 
 function About() {
   return (
     <>
+      <Head>
+        <title>About - Matthew Downs</title>
+      </Head>
+
       <div className="mx-auto max-w-7xl p-4 sm:p-6 lg:p-8">
         <div className="grid grid-cols-12 gap-8 items-center">
           <div className="mx-auto col-span-12 md:col-span-4" style={{ maxWidth: '300px' }}>
@@ -10,8 +15,8 @@ function About() {
               alt="Matthew Downs"
               className="rounded-lg shadow-lg"
               src="/assets/img/headshot.png"
-              width={1000}
-              height={1000}
+              width={512}
+              height={512}
             />
           </div>
 
