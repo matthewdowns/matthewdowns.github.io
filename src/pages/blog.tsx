@@ -48,7 +48,7 @@ function Blog() {
         <div className="grid grid-cols-12 gap-4">
           {postsInfo.map(postInfo => (
             <div key={postInfo.slug} className="col-span-12 lg:col-span-6 xl:col-span-4 2xl:col-span-3">
-              <div className="bg-slate-100 dark:bg-slate-800 rounded-xl p-5">
+              <div className="h-full bg-slate-100 dark:bg-slate-800 rounded-xl p-5">
                 {postInfo.title == null ? (
                   <div role="status" className="max-w-sm animate-pulse">
                     <div className="h-5 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px] mb-4"></div>

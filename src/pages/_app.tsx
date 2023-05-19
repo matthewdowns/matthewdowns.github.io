@@ -20,8 +20,9 @@ function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     if (router.pathname === '' || router.pathname === '/' || router.pathname.startsWith('/?') || router.pathname.startsWith('/#')) setCurrentPage(Page.Home)
     else if (router.pathname.startsWith('/about')) setCurrentPage(Page.About)
-    else if (router.pathname.startsWith('/tools')) setCurrentPage(Page.Tools)
     else if (router.pathname.startsWith('/blog')) setCurrentPage(Page.Blog)
+    else if (router.pathname.startsWith('/tools')) setCurrentPage(Page.Tools)
+    else if (router.pathname.startsWith('/projects')) setCurrentPage(Page.Projects)
   }, [router.pathname])
 
   return (

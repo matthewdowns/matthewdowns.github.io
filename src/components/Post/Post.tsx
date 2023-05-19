@@ -21,7 +21,7 @@ function Post(props: PostProps) {
           <ArrowLeftIcon className="h-4 w-4" /> Browse
         </Link>
         <div className="flex flex-col-reverse sm:flex-row gap-4 sm:gap-6 md:gap-8">
-          <div>
+          <div className="flex-grow">
             <article className={classNames('prose lg:prose-lg dark:prose-invert', className)}>
               {children}
             </article>
