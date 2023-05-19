@@ -16,8 +16,9 @@ import Page, { PageMap } from '@/types/Page'
 const tabs: Record<Page, string> = {
   [Page.Home]: '/',
   [Page.About]: '/about',
+  [Page.Blog]: '/blog',
   [Page.Tools]: '/tools',
-  [Page.Blog]: '/blog'
+  [Page.Projects]: '/projects'
 }
 
 function TopNavigation() {
